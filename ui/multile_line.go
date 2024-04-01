@@ -120,6 +120,7 @@ func (m *MultiLine) MoveCursorDown() {
 	m.Cursor = nextCursor
 }
 
+// MoveCursorToEnd moves the cursor to the end of the MultiLine
 func (m *MultiLine) MoveCursorToEnd() {
 	m.Cursor = len(m.SingleLines) - 1
 	m.SingleLines[m.Cursor].MoveCursorToEnd()
